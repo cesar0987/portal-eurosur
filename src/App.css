@@ -1,3 +1,4 @@
+
 .app-shell { min-height: 100vh; overflow: hidden; }
 .site-header { background: var(--primary); color: var(--white); }
 .header-inner, main > section, .site-footer { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
@@ -95,4 +96,5 @@
   .site-footer { min-height: 110px; flex-wrap: wrap; padding: 20px 0; }
   .site-footer p { width: 100%; order: 3; }
 }
+
 
