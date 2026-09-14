@@ -1,41 +1,28 @@
-/**
- * Importar fuentes de Google
- */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/**
- * Importar estilos globales
- */
-@import "./styles/global.css";
-
-/**
- * Layout principal
- */
-.main-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+:root {
+  --primary: #442e66;
+  --primary-dark: #2c1c47;
+  --accent: #ffb606;
+  --dark: #32373c;
+  --text: #53545b;
+  --muted: #85848b;
+  --line: #e8e3ec;
+  --paper: #fbfafc;
+  --white: #ffffff;
+  --sans: 'Mulish', sans-serif;
+  --heading: 'Poppins', sans-serif;
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-.main-content {
-  flex: 1;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; }
+button, input, textarea { font: inherit; }
 
-/**
- * Secciones
- */
-.hero-section {
-  padding: var(--spacing-xxl) var(--spacing-lg);
-  background-color: var(--color-light-gray);
-  text-align: center;
-}
-
-.hero-section h1 {
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-md);
-}
-
-.hero-section p {
-  font-size: 1.125rem;
-  color: var(--color-text);
-}
+#root { min-height: 100vh; }
+p { margin: 0; }
