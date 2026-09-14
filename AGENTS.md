@@ -14,6 +14,7 @@ Este archivo define las reglas que los asistentes de IA (como Copilot, Cursor, C
 - **PROHIBIDO** modificar ramas `main` o `develop` directamente
 
 La IA solo puede:
+
 - Crear ramas nuevas con `git checkout -b`
 - Hacer commits en la rama actual
 - Subir la rama actual con `git push origin nombre-rama`
@@ -99,6 +100,7 @@ git push origin tarea/nombre-descriptivo
 ### 10. Mensajes de commit
 
 **Formato obligatorio:**
+
 ```
 tipo: descripción corta (máx 50 caracteres)
 
@@ -106,6 +108,7 @@ tipo: descripción corta (máx 50 caracteres)
 ```
 
 **Tipos permitidos:**
+
 - `feat:` nueva funcionalidad
 - `fix:` corrección de bug
 - `style:` cambios de CSS/estilos
@@ -114,6 +117,7 @@ tipo: descripción corta (máx 50 caracteres)
 - `test:` agregar o modificar tests
 
 **Ejemplos correctos:**
+
 ```
 feat: add NoticiaCard component
 fix: form validation on empty submit
@@ -121,6 +125,7 @@ style: make navbar responsive
 ```
 
 **Ejemplos prohibidos:**
+
 ```
 updated code
 changes
@@ -172,6 +177,7 @@ wip
 ### 16. Reportar cambios
 
 Después de cada cambio, reportar:
+
 - Qué archivos se modificaron
 - Qué se hizo en cada archivo
 - Si hay pasos manuales pendientes (ej: `npm install`)
@@ -179,6 +185,7 @@ Después de cada cambio, reportar:
 ### 17. Preguntar antes de cambios grandes
 
 Antes de:
+
 - Crear archivos nuevos (más de 1)
 - Modificar estructura de carpetas
 - Cambiar configuración
@@ -196,6 +203,7 @@ Preguntar al usuario: "¿Quieres que [descripción del cambio]?"
 ### 19. Explicar el porqué
 
 Al hacer cambios, explicar brevemente:
+
 - Por qué se hace ese cambio
 - Qué problema resuelve
 - Si hay alternativas
@@ -253,6 +261,64 @@ Al hacer cambios, explicar brevemente:
 
 ---
 
+## Branding y Diseño
+
+### 27. Seguir identidad EUROSUR
+
+Todos los cambios en UI/UX deben respetar el branding definido en `BRANDING.md`:
+
+**Colores corporativos:**
+
+- Primario: `#442e66` (Violeta profundo)
+- Acento: `#ffb606` (Dorado/Amarillo)
+- Oscuro: `#32373c` (Gris carbón)
+- Claro: `#ffffff` (Blanco)
+- Texto: `#333333` (Gris oscuro)
+
+**Tipografías:**
+
+- `Poppins` → Títulos y headings
+- `Mulish` → Cuerpo de texto
+
+**Elementos visuales:**
+
+- Logo: https://eurosur.edu.py/wp-content/uploads/2024/08/logoeurosur-blanco.png
+- Eslogan: "Capacítate y alcanza nuevas metas con Eurosur"
+
+### 28. Respetar estructura de secciones
+
+La arquitectura del sitio debe seguir la estructura definida en `BRANDING.md`:
+
+- Hero (título + subtítulo + CTA + imagen edificio)
+- Niveles Educativos (3 tarjetas)
+- Formulario de Inscripción
+- Por qué Elegir EUROSUR
+- Cursos Cortos (3 tarjetas)
+- CTA Final
+- Footer (4 sedes)
+
+### 29. Copyrighting alineado
+
+Usar los textos clave guardados en `BRANDING.md`:
+
+- Hero: "Capacítate y alcanza nuevas metas..."
+- Por qué elegirnos: Formación de calidad, docentes expertos, prácticas reales
+- Cursos cortos: "¡Aprende rápido, crece más!"
+- CTA final: Programas innovadores, oportunidades
+
+**No** inventar textos sin confirmación del usuario.
+
+### 30. Datos de contacto consistentes
+
+Todos los enlaces y datos deben coincidir con lo definido en `BRANDING.md`:
+
+- WhatsApp: +595 975 767 720 → http://wa.me/595975767720
+- Campus Virtual: https://campus.eurosur.edu.py/
+- Facebook: https://www.facebook.com/eurosur
+- Instagram: https://www.instagram.com/eurosur/
+
+---
+
 ## Excepciones
 
 Las siguientes acciones **SÍ están permitidas** con autorización explícita:
@@ -278,6 +344,11 @@ Antes de entregar cualquier cambio, verificar:
 - [ ] No hay datos sensibles en el código
 - [ ] El código sigue las convenciones existentes
 - [ ] No se eliminó código existente sin confirmación
+- [ ] Se respetó la paleta de colores EUROSUR (#442e66, #ffb606, etc.)
+- [ ] Se usaron tipografías correctas (Poppins títulos, Mulish cuerpo)
+- [ ] Los textos coinciden con copywriting definido en BRANDING.md
+- [ ] Los datos de contacto son consistentes (WhatsApp, redes, emails)
+- [ ] La estructura de secciones sigue el layout definido
 
 ---
 
