@@ -1,0 +1,210 @@
+/**
+ * Estilos Footer — EUROSUR
+ */
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--spacing-xxl) 0;
+  margin-top: var(--spacing-xxl);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
+}
+
+/* Grid de secciones */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Lista de sedes */
+.locations-list {
+  list-style: none;
+}
+
+.location-item {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.location-name {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.location-address {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.location-phone {
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.location-phone:hover {
+  color: var(--color-light);
+  text-decoration: underline;
+}
+
+/* Enlaces */
+.footer-links,
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-links a,
+.social-links a {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: var(--color-accent);
+  margin-left: 0.5rem;
+}
+
+/* Contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-info p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-accent) !important;
+  margin-top: var(--spacing-sm);
+}
+
+.cta-button {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: fit-content;
+  margin-top: var(--spacing-sm);
+}
+
+.cta-button:hover {
+  background-color: var(--color-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 182, 6, 0.3);
+}
+
+/* Divisor */
+.footer-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: var(--spacing-lg) 0;
+}
+
+/* Footer inferior */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  margin: 0;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-legal {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.footer-legal a {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-section:last-of-type {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-grid {
+    gap: var(--spacing-md);
+  }
+
+  .footer-section {
+    gap: var(--spacing-sm);
+  }
+}
